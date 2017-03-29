@@ -14,10 +14,19 @@
 #define PIN      6
 #define N_LEDS   36
 
-Adafruit_NeoPixel strip = Adafruit_NeoPixel(N_LEDS, PIN, NEO_RGBW);
+Adafruit_NeoPixel strip = Adafruit_NeoPixel(N_LEDS, PIN, NEO_GRBW);
 
 void setup() {
   strip.begin();
+  for(uint16_t i=0; i<strip.numPixels(); i++) {
+    //strip.setPixelColor(8  , strip.Color(0, 0, 0, 100));
+    //strip.setPixelColor(14  , strip.Color(65, 100, 40)); // (.65, 1, .4)
+//     strip.setPixelColor(14  , strip.Color(255, 0, 0));
+//     strip.setPixelColor(15  , strip.Color(0, 255, 0));
+//     strip.setPixelColor(20  , strip.Color(0, 0, 255));
+//     strip.setPixelColor(21  , strip.Color(100, 100, 100));
+     //strip.show();
+  }
 }
 
 void loop() {
