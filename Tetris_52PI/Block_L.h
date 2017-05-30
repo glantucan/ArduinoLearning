@@ -1,5 +1,6 @@
 #ifndef Block_L_h
 #define Block_L_h
+
 #include "Arduino.h"
 #include "Block.h"
 
@@ -8,7 +9,11 @@ class Block_L : public Block{
         Block_L(byte colorBits);
         
     private:
-        byte _states[4][4]; // rotation states
-}
+        // rotation states
+        static const byte state_0;
+        static const byte state_1;
+        static const byte state_2;
+        static const byte state_3;
+};
 
 #endif
