@@ -6,6 +6,8 @@
 
 RGBMatrix matrix(10);
 long counter;
+Field field;
+
 void setup(){
     matrix.setPixel(0, 0, 1, 1, 1);
     matrix.setPixel(1, 0, 0, 1, 1);
@@ -14,6 +16,10 @@ void setup(){
     matrix.setPixel(4, 0, 1, 0, 1);
     matrix.setPixel(5, 0, 1, 0, 0);
     matrix.setPixel(6, 0, 0, 1, 0);
+
+    
+    //field = Field(Floor(8), 8);
+
 }
 
 void loop(){

@@ -20,6 +20,7 @@ class RGBMatrix {
         // the corresponding register, while the anode is HIGH to lit that 
         // LED on)
         // We set everything off at the beginning putting a one on each bit
+        // We only need 24bits for this but there is no uint24_t type, so ...
         uint32_t _screen[8];
         
         /* The following are the times each color will remain lit for 
@@ -27,7 +28,8 @@ class RGBMatrix {
         We will use it as color correction as with the current 
         algorithm we can't lit a pixel indepently. 
         It can also be used to animate colors globally on each line 
-        or the whole matrix. */
+        or the whole matrix. I used uint16 to have some margin in case we 
+        want delays of the miliseconds order*/
         uint16_t _r;
         uint16_t _g;
         uint16_t _b;

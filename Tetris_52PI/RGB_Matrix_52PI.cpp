@@ -7,16 +7,16 @@
 #include "SPI.h"
 
 
-const uint32_t RGBMatrix::_blankScreen[] = {
-            0xFFFFFFFF,
-            0xFFFFFFFF,
-            0xFFFFFFFF, 
-            0xFFFFFFFF, 
-            0xFFFFFFFF,
-            0xFFFFFFFF,
-            0xFFFFFFFF,
-            0xFFFFFFFF
-        };
+const uint32_t RGBMatrix::_blankScreen[8] = {
+    0xFFFFFFFF,
+    0xFFFFFFFF,
+    0xFFFFFFFF, 
+    0xFFFFFFFF, 
+    0xFFFFFFFF,
+    0xFFFFFFFF,
+    0xFFFFFFFF,
+    0xFFFFFFFF
+};
 
 
 

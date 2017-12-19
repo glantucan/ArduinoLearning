@@ -5,11 +5,12 @@
 #include "Block.h"
 
 class Floor {
+    private:
+        
     public:
         Floor(byte width);
         void addBlock(const Block &block);
         void update();
-    private:
 
 };
 
